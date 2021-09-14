@@ -151,7 +151,10 @@ Expected:  The Number is 360
 
 Define a function that takes 2 or more string parameters and prints a single line using them as part of a functional string. The function may do anything you chose but the function name and parameter names must be representative of what they are.
 
- - Answer: pirnt('Some classes I take are ' + 'Science and ' + 'Math.')
+ - Answer: 
+ class1 = 'Science'
+ class2 = 'Math'
+ print('Some classes I take are ' + class1 + ' and ' + class2)
   
 
 
@@ -173,10 +176,12 @@ https://www.freecodecamp.org/news/how-to-substring-a-string-in-python/
 s1 = "Hello Student! My name is Carlos Jose Cobián. I enjoy coding and video games!"
 
  - Answer: ss1 = s1[26:44]
+   print(ss1)
 
 Capitalize every letter of ss1 using a function. Store it in a variable called SS1.
 
  - Answer: SS1 = s1.upper()
+   print(SS1)
 
 
 This last section is not worth any points, but is worth looking into. It is good string manipulation practice and contains exercises that you may see in a pop quiz! 
