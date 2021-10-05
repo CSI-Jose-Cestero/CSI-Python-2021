@@ -6,14 +6,13 @@ weight = int(input("What is your weight in pounds? "))
 
 Planet = input("Select a planet from the list here: "+ str(planets))
 
-def CalcWeight(planets, weights):
+def CalcWeight(planet, weights):
     kg = weights/2.2046
 
     print("Your mass in kg is "+ str(kg))
 
     nlb = 4.45
-    planet = str(planets)
-    planet_index = planets.index(planets)
-    print("Your weight in " + Planet + " is " + str((kg * (g_ms2[planet_index]))/nlb) + " lb")
+    planet_index = planets.index(planet)
+    print("Your weight in " + Planet + " is " + str((kg * (g_ms2[planet_index])/nlb)) + " lb")
 
 CalcWeight(Planet, weight)
