@@ -72,6 +72,7 @@ Give a python example for each logic operator in the module image.
 
  - Answers:
    - OR:
+   if()
    - AND: 
    - NOT: 
 
