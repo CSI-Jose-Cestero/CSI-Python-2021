@@ -1,7 +1,7 @@
 import random
 
 
-print("Rock, paper, scissors!!!!!")
+print("Let's play rock, paper, scissors!!!!!")
 options = ["rock", "paper", "scissors"]
 choices = input("Choose between rock, paper, and scissors! ")
 
@@ -22,7 +22,7 @@ def input(pick):
     elif(compchoice== "rock" & pick == "paper"):
         print("Paper beats rock, you win!")
     elif(compchoice== "rock" & pick == "scissors"):
-        print("Rock beats scissors, you lose.")
+        print("Rock beats scissors, you lose. ")
 
 input(choices)
 
