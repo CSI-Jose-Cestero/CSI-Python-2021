@@ -72,9 +72,18 @@ Give a python example for each logic operator in the module image.
 
  - Answers:
    - OR:
-   if()
+   houseprice = 300
+   if(houseprice == 300 || houseprice<400):
+      print("You should buy this house!")
    - AND: 
+  ambulanceprice = 400
+  premiums = 300
+  if(ambulanceprice>10 & premiums>20)
+      print("maybe you shouldn't go to the hospital")
    - NOT: 
+   hot == False
+   if(hot != True)
+      print("today is a good day to go out!")
 
 
 Type down any class notes below this sentence:
