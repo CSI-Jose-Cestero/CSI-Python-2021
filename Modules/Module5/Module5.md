@@ -83,7 +83,7 @@ Give a python example for each logic operator in the module image.
  - Answers:
    - OR:
    houseprice = 300
-   if(houseprice == 300 || houseprice<400):
+   if(houseprice == 300 or houseprice<400):
       print("You should buy this house!")
    - AND: 
   ambulanceprice = 400
