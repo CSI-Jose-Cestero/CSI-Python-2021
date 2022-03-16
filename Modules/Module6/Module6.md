@@ -1,8 +1,13 @@
 <div style="text-align:center">
         <img    src="https://www.nylas.com/wp-content/uploads/JSON_Blog_Hero.png"
                 title="JSON" 
+<<<<<<< HEAD
                 width="70%" 
                 height="70%" />
+=======
+                width="40%" 
+                height="40%" />
+>>>>>>> upstream/main
 </div>
 <br>
 
@@ -40,6 +45,7 @@ s = Student("14-146", "Carlos Cobian")
 ### json.dump() vs. json.dumps()
 * <u>json.dump</u> serializes an object into a file. It takes 2 parameters, the object and the destination file.
 * <u>json.dumps</u> or *dump string* serializes an object into a string, that may then be stored into a variable for future use. It's only parameter is the object.
+<<<<<<< HEAD
 
 ### Serialization of an object into a file
 This file will be placed in the same directory as the script being executed.
@@ -69,6 +75,31 @@ file = open('ExperimentData.json',)
 experimentJson = json.load(file)
 
 myObject = ExperimentData(**experimentJson)
+=======
+
+### Serialization of an object into a file
+This file will be placed in the same directory as the script being executed.
+
+```python
+# Determine output Directory
+myOutputPath = Path(__file__).parents[0]
+myOutputFilePath = os.path.join(myOutputPath, 'student.json')
+
+# Serialization
+with open(myOutputFilePath, 'w') as outfile:
+  json.dump(s.__dict__, outfile)
+```
+
+### Deserializing using a class
+Passing each parameter to a constructor is tedious work. By using the two asterisks `**` we may take a JSON object and load it into a class. This will automatically match each class parameter with the equally named one found on the JSON object. 
+```python
+# Load file as JSON
+file = open('student.json',)
+studentJson = json.load(file)
+
+# Construct Student Object
+myStudent = Student(**studentJson)
+>>>>>>> upstream/main
 ```
 
 <br>
@@ -81,6 +112,7 @@ myObject = ExperimentData(**experimentJson)
 
 What does JSON Stand for?
 
+<<<<<<< HEAD
  - Answer: JSON stands for JavaScript Object Notation
 
 Why are JSON formats important?
@@ -98,6 +130,25 @@ What is the difference between serialization and deserialization?
 Research data persistance. What did you find?
 
  - Answer: From what I found, data persistance was defined as "information that is infrequently accessed and not likely to be modified". One main example I found was a hospital registry, as the material there is unlikely to be changed unless a patient changes their name.
+=======
+ - Answer:
+
+Why are JSON formats important?
+
+ - Answer:
+
+Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
+
+ - Answer:
+
+What is the difference between serialization and deserialization?
+
+ - Answer:
+
+Research data persistance. What did you find?
+
+ - Answer: 
+>>>>>>> upstream/main
 
 Type down any class notes below this sentence:
 
@@ -108,4 +159,8 @@ Lackluster responses may result in point deductions.
 
 <br>
 
+<<<<<<< HEAD
 ## [Next Module ->](/../../tree/main/Modules/Module7/Module7.md)
+=======
+## [Next Module ->](/../../tree/main/Modules/Module7/Module7.md)
+>>>>>>> upstream/main
